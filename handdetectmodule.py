@@ -1,19 +1,20 @@
 import cv2
-import mediapipe as mp
 import time
-
+import mediapipe as mp
+hands_module = mp.solutions.hands #type: ignore
+drawing_utils = mp.solutions.drawing_utils #type: ignore
 class Handdetect():
     def __init__(self, mode=False, maxhands=2, detectconfi=0.5, trackconfi=0.5):
         self.mode = mode
         self.maxhands = maxhands
         self.detectconfi = detectconfi
         self.trackconfi = trackconfi
-        self.mpHands = mp.solutions.hands
+        self.mpHands = hands_module
         self.hands = self.mpHands.Hands(static_image_mode=self.mode,
                                         max_num_hands=self.maxhands,
                                         min_detection_confidence=self.detectconfi,
                                         min_tracking_confidence=self.trackconfi)
-        self.mpdraw = mp.solutions.drawing_utils
+        self.mpdraw = drawing_utils
         self.results = None 
         self.tipIds=[4,8,12,16,20]
 

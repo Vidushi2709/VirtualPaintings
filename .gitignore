@@ -1,0 +1,20 @@
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore recordings directory
+recordings/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
