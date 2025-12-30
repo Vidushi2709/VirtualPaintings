@@ -242,7 +242,7 @@ def main():
     print("- Index finger: Draw clouds")
     print("- Index + Middle finger: Select color")
     print("- Thumb only: Make em shine!")
-    print("- Thumb + Index: Make em float up!")
+    print("- 3 fingers: Make em float up!")
     print("- 4 fingers: Start recording")
     print("- 5 fingers: Stop recording")
     print("- Press 'c' to clear canvas")
@@ -287,8 +287,8 @@ def main():
                 smoothing_buffer_x.clear()
                 smoothing_buffer_y.clear()
             
-            # Thumb + Index → FLOAT 
-            elif fingers[0] and fingers[1] and finger_count == 2:
+            # Three fingers up → FLOAT 
+            elif finger_count == 3:
                 if not float_active:
                     float_active = True
                     float_offset = 0

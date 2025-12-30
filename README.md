@@ -44,7 +44,7 @@ Controls:
 * Index finger           : Draw clouds
 * Index + Middle finger  : Select color
 * Thumb only             : Make em shine!
-* Thumb + Index          : Make em float up!
+* 3 fingers              : Make em float up!
 * 4 fingers              : Start recording
 * 5 fingers              : Stop recording
 * Press 'c'              : Clear canvas
